@@ -9,7 +9,7 @@ format: gfm
 - `tidyverse`: This includes all the library...
 - `nycflights13`: This includes flights data...
 
-```{r, include = FALSE}
+```{r, include = TRUE}
 library(tidyverse)
 library(nycflights13)
 ```
