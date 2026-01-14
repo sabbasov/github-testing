@@ -1,0 +1,25 @@
+---
+title: "Practicing with Quarto"
+author: "Sabuhi, Alex, Aayush"
+format: gfm
+---
+
+# Test
+
+- `tidyverse`: This includes all the library...
+- `nycflights13`: This includes flights data...
+
+```{r, include = FALSE}
+library(tidyverse)
+library(nycflights13)
+```
+
+```{r, echo = FALSE}
+flights |>
+    filter(origin == "JFK" & carrier %in% c('UA', 'DL', 'AA')) |>
+    ggplot(aes(x = carrier, fill = dest)) +
+    geom_bar() +
+    labs(
+        title = "American Airlines, Delta, and United Airlines flights from JFK by destination"
+    )
+```
